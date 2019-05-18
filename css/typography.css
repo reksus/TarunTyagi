@@ -1,0 +1,110 @@
+/*  */
+/* HEADER */
+/*  */
+.header{
+    background-color: var(--color-gray-dark-2);
+    color: var(--color-gray-light-1);
+}
+.TarunTyagi{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.header-nav{
+    line-height: 1.5;
+}
+.header-nav-list-link{
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color .2s;
+}
+.header-nav-list-link:hover{
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+}
+
+/*  */
+/* FRONT */
+/*  */
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+/*  */
+/* PROJECT */
+/*  */
+
+.project-detail{
+}
+.project-title{
+    font-weight: 700;
+}
+.project-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.project-technologies{
+    font-weight: bolder;
+}
+.project-link{
+    font-size: 5rem;
+    color: var(--color-gray-dark-1);
+}
+.project-link:hover,
+.project-link:active{
+    color: var(--color-primary);
+    transform: scale(1.02);
+}
+
+
+/*  */
+/* GEMERAL SETTING */
+/*  */
+
+h2{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+h3{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+/*  */
+/* FOOTER */
+/*  */
+.footer{
+    background-color: var(--color-gray-dark-2);
+    background-color: black;
+    color: var(--color-gray-light-1);
+
+}
+.connect__link{
+    font-size: var(--icon-size);
+    border-color: currentColor;
+}
+.connect__link:hover{
+    transform: scale(.98);
+    border-color: currentColor;
+    cursor: pointer;
+}
+.connect__link:hover.connect__link--instagram{
+    color: #3f729b;
+}
+.connect__link:hover.connect__link--facebook{
+    color: #3b5998;
+}
+.connect__link:hover.connect__link--github{
+    color: #333333;
+}
+.connect__link:hover.connect__link--twitter{
+    color:  #00acee;
+}
+.connect__link:hover.connect__link--mail{
+    color:  #b23121;
+}

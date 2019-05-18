@@ -1,0 +1,24 @@
+:root{
+    --color-primary: #d65a31;
+    --color-secondary : #a9eec2;
+    --color-tertiary : #705772;
+    /* --color-secondary : ;
+    --color-tertiary : ; */
+    
+    --color-gray-dark-1 : #393e46;
+    --color-gray-dark-2 : #222831;
+    --color-black : #000000;
+    
+    --color-gray-light-1 : #eeeeee;
+    --color-white : #ffffff;
+
+    --icon-size : 3rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
