@@ -3,6 +3,20 @@ main > section,
 .footer{
     padding : 2rem 8rem;
 }
+/* 1000px */
+@media only screen and (max-width: 62.5em){
+    main > section,
+    .footer{
+        padding : 0 6rem;
+    }
+}
+/* 800px */
+@media only screen and (max-width: 50em){
+    main > section,
+    .footer{
+        padding : 0;
+    }
+}
 
 /* HEADER   */
 
@@ -99,8 +113,12 @@ main > section,
 /*  */
 /* PROJECT SECTION  */
  /*  */
-.projects__personal{
-    margin-bottom: 5rem;
+
+ .projects > div[class^="projects"]:not(:last-child){
+    margin-bottom: 10rem;
+ }
+.project:not(:last-child){
+    margin-bottom: 7.5rem;
 }
 .project{
     padding: 2rem;
@@ -114,9 +132,7 @@ main > section,
 .projects h3{
     margin-bottom: 1.5rem;
 }
-.project:not(:last-child){
-    margin-bottom: 10rem;
-}
+
 .project:nth-child(even) .project-image-wrapper{
     order: -1;
 }
@@ -163,6 +179,9 @@ main > section,
     .project{
         flex-direction: column;
     }
+    .project:not(:last-child){
+        margin-bottom: 5rem;
+    }
     .project-title{
         font-size: 3rem;
     }
@@ -172,16 +191,40 @@ main > section,
     .project .project-image-wrapper{
         order: -1 !important;
     }
+    .projects h2{
+        margin-top: 2rem;
+    }
+}
+@media only screen and (max-width: 50em){
+    .projects h2, .projects h3{
+       text-align: center;
+    }
+    .project-text {
+        padding-top: 0;
+        text-align: center;
+    }
 }
 
+/* 700px */
+@media only screen and (max-width: 43.7em){
+    .project:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    .project-text{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .project-technologies strong{
+        display: none;
+    }
+    
+}
 /*  */
 /* FOOTER SECTION */
 /*  */
 
 .footer{
-    background-color: var(--color-gray-dark-2);
     background-color: black;
-
 }
 .connect{
     margin-bottom: 3rem;
@@ -189,7 +232,6 @@ main > section,
  .connect__links{
     display: flex;
     margin-top: 2rem;
-    /* justify-content: space-between; */
 }
 .connect__link{
 
@@ -207,4 +249,20 @@ main > section,
 }
 .connect__link:not(:last-child){
     margin-right: 2.2rem;
+}
+/* 1000px */
+@media only screen and (max-width: 62.5em){
+    .footer{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+/* 800px */
+@media only screen and (max-width: 50em){
+    .footer{
+        text-align: center;
+    }
+    .connect__links{
+        justify-content: center;
+    }
 }
